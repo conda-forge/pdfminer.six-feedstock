@@ -14,9 +14,9 @@ Summary: PDF parser and analyzer
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pdfminer.six-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pdfminer.six-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pdfminer.six-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pdfminer.six-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pdfminer.six-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pdfminer-six-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmpve89jhq_-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmpve89jhq_-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmpve89jhq_-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmpve89jhq_-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tmpve89jhq_-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tmpve89jhq--feedstock/branch/master)
 
 Current release info
 ====================
