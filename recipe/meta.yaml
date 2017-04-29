@@ -1,19 +1,20 @@
-{%set name = "pdfminer.six" %}
-{%set version = "20160614" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "8897b7ca5e94329aef5b862e501834ea2c0460c9940c904fdbd07dba297c2553" %}
+{% set name = "pdfminer.six" %}
+{% set version = "20170419" %}
+{% set hash_type = "sha256" %}
+{% set hash = "8dc0c05c8fa84e7d06933896be815a3e69f65dad4a19070dfa56e70afa5e1588" %}
+{% set build = 0 %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   fn: {{ name }}-{{ version }}.zip
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  {{ hash_type }}: {{ hash_val }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -24,7 +25,8 @@ requirements:
   run:
     - python
     - six
-    - chardet
+    - pycrypto
+    - chardet  # [py3k]
 
 test:
   imports:
@@ -32,15 +34,17 @@ test:
 
   commands:
     - pdf2txt.py -h
+    - dumppdf.py -h
     # Can't test latin2ascii.py unless you feed it input.
     # Can't test dumppdf.py unless you feed it input.
 
 about:
-  home: http://github.com/goulu/pdfminer
+  home: https://github.com/pdfminer/pdfminer.six
+  license_file: LICENSE
   license: MIT
   license_family: MIT
-  # license_file: No LICENSE included - see https://github.com/goulu/pdfminer/issues/31
   summary: 'PDF parser and analyzer'
+  dev_url: https://github.com/pdfminer/pdfminer.six
 
 extra:
   recipe-maintainers:
