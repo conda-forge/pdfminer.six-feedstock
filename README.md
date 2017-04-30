@@ -1,7 +1,7 @@
 About pdfminer.six
 ==================
 
-Home: http://github.com/goulu/pdfminer
+Home: https://github.com/pdfminer/pdfminer.six
 
 Package license: MIT
 
