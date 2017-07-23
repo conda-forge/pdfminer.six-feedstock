@@ -1,8 +1,8 @@
 {% set name = "pdfminer.six" %}
-{% set version = "20170419" %}
+{% set version = "20170720" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "8dc0c05c8fa84e7d06933896be815a3e69f65dad4a19070dfa56e70afa5e1588" %}
+{% set hash = "a37c6348a8d903cf5f7d50346b0569a7c669afdb625b1ee25056f01fb82bd3e0" %}
 {% set build = 0 %}
 
 package:
