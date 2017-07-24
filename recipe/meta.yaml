@@ -1,8 +1,8 @@
 {% set name = "pdfminer.six" %}
-{% set version = "20170419" %}
-{% set compress_type = "tar.gz" %}
+{% set version = "20170720" %}
+{% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "8dc0c05c8fa84e7d06933896be815a3e69f65dad4a19070dfa56e70afa5e1588" %}
+{% set hash = "a37c6348a8d903cf5f7d50346b0569a7c669afdb625b1ee25056f01fb82bd3e0" %}
 {% set build = 0 %}
 
 package:
@@ -10,8 +10,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
@@ -35,9 +35,8 @@ test:
 
   commands:
     - pdf2txt.py -h
-    # Can't test dumppdf.py b/c -h apparently raises issues.
+    # Can't test dumppdf.py b/c -h raises issues.
     # Can't test latin2ascii.py unless you feed it input.
-    # Can't test dumppdf.py unless you feed it input.
 
 about:
   home: https://github.com/pdfminer/pdfminer.six
