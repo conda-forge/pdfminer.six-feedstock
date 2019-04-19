@@ -1,6 +1,6 @@
 {% set name = "pdfminer.six" %}
 {% set version = "20181108" %}
-{% set author = "pdfminer %}
+{% set author = "pdfminer" %}
 {% set sha256 = "99b2bf8e2154e617c88bba7ea4f3fd02fb7d5b7be6b441a9001ca29d54d255f4" %}
 
 package:
