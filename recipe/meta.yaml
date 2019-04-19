@@ -9,19 +9,20 @@ source:
   sha256: 99b2bf8e2154e617c88bba7ea4f3fd02fb7d5b7be6b441a9001ca29d54d255f4
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - six
     - pycryptodome
     - sortedcontainers
-    - chardet  # [py3k]
+    - chardet
 
 test:
   imports:
@@ -43,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - pvanheus
