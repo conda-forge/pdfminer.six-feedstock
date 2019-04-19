@@ -1,34 +1,25 @@
-{% set name = "pdfminer.six" %}
-{% set author = "pdfminer" %}
 {% set version = "20181108" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "99b2bf8e2154e617c88bba7ea4f3fd02fb7d5b7be6b441a9001ca29d54d255f4" %}
-{% set build = 0 %}
 
 package:
-  name: {{ name|lower }}
+  name: pdfminer.six
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://github.com/{{ author }}/{{ name }}/archive/{{ version}}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://github.com/pdfminer/pdfminer.six/archive/{{ version}}.tar.gz
+  sha256: 99b2bf8e2154e617c88bba7ea4f3fd02fb7d5b7be6b441a9001ca29d54d255f4
 
 build:
-  number: {{ build }}
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
-    - setuptools
     - pip
-  
   run:
     - python
     - six
-    - pycrypto
+    - pycryptodome
     - sortedcontainers
     - chardet  # [py3k]
 
