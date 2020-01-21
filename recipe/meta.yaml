@@ -1,4 +1,4 @@
-{% set version = "20191020" %}
+{% set version = "20200121" %}
 
 package:
   name: pdfminer.six
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pdfminer/pdfminer.six/archive/{{ version}}.tar.gz
-  sha256: fb9beeb8d762150376a221d96372c98e7ebcaf95788ca48af329fcde3bf81782
+  sha256: 643639ec0bcd46751da167c16a512bb1608c4999028f320fe1b09c60b63288f3
 
 build:
   number: 0
