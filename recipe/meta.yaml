@@ -29,7 +29,7 @@ test:
     - pdfminer
 
   commands:
-    - pdf2txt.py -h
+    - python pdf2txt.py -h
     # Can't test dumppdf.py b/c -h raises issues.
     # Can't test latin2ascii.py unless you feed it input.
 
