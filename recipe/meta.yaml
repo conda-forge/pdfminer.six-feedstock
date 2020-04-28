@@ -30,7 +30,7 @@ test:
   source_files:
     - tools/pdf2txt.py
   commands:
-    - python tools/pdf2txt.py -h
+    - {{ PYTHON }} tools/pdf2txt.py -h
     # Can't test dumppdf.py b/c -h raises issues.
     # Can't test latin2ascii.py unless you feed it input.
 
