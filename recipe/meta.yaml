@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/pdfminer/pdfminer.six/archive/{{ version}}.tar.gz
+  url: https://github.com/pdfminer/pdfminer.six/archive/{{ version }}.tar.gz
   sha256: 9cb849b95046f064b6ac2350234349007d2efd52647df6d755521e48dde5a28e
 
 build:
