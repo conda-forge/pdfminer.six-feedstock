@@ -5,13 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/pdfminer/pdfminer.six/archive/{{ version}}.tar.gz
+  url: https://github.com/pdfminer/pdfminer.six/archive/{{ version }}.tar.gz
   sha256: fb9beeb8d762150376a221d96372c98e7ebcaf95788ca48af329fcde3bf81782
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
