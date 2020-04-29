@@ -9,6 +9,11 @@ Feedstock license: BSD 3-Clause
 
 Summary: PDF parser and analyzer
 
+Pdfminer.six is a community maintained fork of the original PDFMiner.
+It is a tool for extracting information from PDF documents.
+It focuses on getting and analyzing text data. Pdfminer.six extracts
+the text from a page directly from the sourcecode of the PDF.
+It can also be used to get the exact location, font or color of the text.
 
 
 Current build status
@@ -116,6 +121,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@estshorter](https://github.com/estshorter/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@pvanheus](https://github.com/pvanheus/)
 
