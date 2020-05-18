@@ -30,9 +30,8 @@ test:
 
   commands:
     - pdf2txt.py -h
-    # Can't test dumppdf.py b/c -h raises issues.
-    # Can't test latin2ascii.py unless you feed it input.
-
+    - dumppdf.py -h 
+    
 about:
   home: https://github.com/pdfminer/pdfminer.six
   license_file: LICENSE
