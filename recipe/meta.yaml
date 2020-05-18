@@ -9,7 +9,7 @@ source:
   sha256: 4c8e41e01f00706d2f9433a74a9fdcb362250122ee3ac17752aa6f3cff8f0e72
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -19,7 +19,6 @@ requirements:
     - pip
   run:
     - python >=3.4
-    - six
     - pycryptodome
     - sortedcontainers
     - chardet
