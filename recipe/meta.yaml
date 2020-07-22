@@ -1,4 +1,4 @@
-{% set version = "20200517" %}
+{% set version = "20200720" %}
 
 package:
   name: pdfminer.six
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/pdfminer/pdfminer.six/archive/{{ version }}.tar.gz
-  sha256: 4c8e41e01f00706d2f9433a74a9fdcb362250122ee3ac17752aa6f3cff8f0e72
+  sha256: b7392771e11e98f0de46b139963269021e2ed66ce1288cddba030cb35f4c82e4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.4
-    - pycryptodome
+    - cryptography
     - sortedcontainers
     - chardet
 

@@ -5,7 +5,7 @@ Home: https://github.com/pdfminer/pdfminer.six
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: PDF parser and analyzer
 
