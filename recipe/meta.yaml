@@ -1,4 +1,4 @@
-{% set version = "20200720" %}
+{% set version = "20200726" %}
 
 package:
   name: pdfminer.six
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pdfminer/pdfminer.six/archive/{{ version }}.tar.gz
-  sha256: b7392771e11e98f0de46b139963269021e2ed66ce1288cddba030cb35f4c82e4
+  sha256: e90ca1ebc1743d1b7897ca483ef2aa2c5516348c49d5a298ef033e9f8ffa3944
 
 build:
   number: 0
@@ -29,8 +29,8 @@ test:
 
   commands:
     - pdf2txt.py -h
-    - dumppdf.py -h 
-    
+    - dumppdf.py -h
+
 about:
   home: https://github.com/pdfminer/pdfminer.six
   license_file: LICENSE
