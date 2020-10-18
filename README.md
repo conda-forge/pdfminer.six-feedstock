@@ -5,9 +5,13 @@ Home: https://github.com/pdfminer/pdfminer.six
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfminer.six-feedstock/blob/master/LICENSE.txt)
 
 Summary: PDF parser and analyzer
+
+Development: https://github.com/pdfminer/pdfminer.six
+
+Documentation: https://pdfminersix.readthedocs.io
 
 Pdfminer.six is a community maintained fork of the original PDFMiner.
 It is a tool for extracting information from PDF documents.
