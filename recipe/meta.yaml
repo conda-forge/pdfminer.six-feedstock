@@ -9,7 +9,7 @@ source:
   sha256: 0e9c8b0a9c40c2aee044c3091ad6b18b5e6279722e64b6b975f8aedc26bf8e38
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,6 +21,7 @@ requirements:
     - python >=3.6
     - cryptography
     - chardet
+    - sortedcontainers
 
 test:
   imports:
@@ -29,6 +30,10 @@ test:
   commands:
     - pdf2txt.py -h
     - dumppdf.py -h
+    - pip check
+
+  requires:
+    - pip
 
 about:
   home: https://github.com/pdfminer/pdfminer.six
