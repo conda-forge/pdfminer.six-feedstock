@@ -9,7 +9,7 @@ source:
   sha256: 5a64c924410ac48501d6060b21638bf401db69f5b1bd57207df7fbc070ac8ae2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -19,8 +19,8 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - cryptography
-    - charset-normalizer
+    - cryptography >=36.0.0
+    - charset-normalizer >=2.0.0
 
 test:
   imports:
