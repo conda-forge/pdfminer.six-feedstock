@@ -10,7 +10,6 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -21,8 +20,8 @@ requirements:
     - python >=3.6
     - cryptography >=36.0.0
     - charset-normalizer >=2.0.0
-    - typing_extensions # [py<38]
-    - importlib_metadata # [py<38]
+    - typing_extensions  # [py<38]
+    - importlib_metadata  # [py<38]
 
 test:
   imports:
