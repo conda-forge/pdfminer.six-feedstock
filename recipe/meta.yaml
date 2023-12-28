@@ -17,6 +17,8 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
+    - wheel
   run:
     - python >=3.8
     - cryptography >=36.0.0
@@ -27,6 +29,7 @@ test:
     - pdfminer
 
   commands:
+    - pip check
     - pdf2txt.py -h
     - dumppdf.py -h
     - pip check
