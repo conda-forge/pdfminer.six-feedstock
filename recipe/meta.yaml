@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -19,6 +19,7 @@ requirements:
     - pip
     - setuptools
     - wheel
+    - setuptools-git-versioning <2
   run:
     - python >=3.8
     - cryptography >=36.0.0
