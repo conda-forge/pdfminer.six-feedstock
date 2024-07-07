@@ -1,4 +1,4 @@
-{% set version = "20231228" %}
+{% set version = "20240706" %}
 
 package:
   name: pdfminer.six
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pdfminer.six/pdfminer.six-{{ version }}.tar.gz
-  sha256: 6004da3ad1a7a4d45930cb950393df89b068e73be365a6ff64a838d37bcb08c4
+  sha256: c631a46d5da957a9ffe4460c5dce21e8431dabb615fee5f9f4400603a58d95a6
 
 build:
   number: 0
