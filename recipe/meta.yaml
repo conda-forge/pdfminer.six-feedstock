@@ -9,19 +9,19 @@ source:
   sha256: 5fb0c553799c591777f22c0c72b77fc2522d7d10c70654e25f4c5f1fd996e008
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
     - wheel
     - setuptools-git-versioning <2
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - cryptography >=36.0.0
     - charset-normalizer >=2.0.0
 
@@ -37,6 +37,7 @@ test:
 
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pdfminer/pdfminer.six
