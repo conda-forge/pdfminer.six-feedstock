@@ -30,7 +30,7 @@ test:
     - pip check
     - pdf2txt.py -h
     - dumppdf.py -h
-    - python -c "from importlib.metadata import version; v = version('pdfminer.six'); print(v); assert v == '{{ version }}'"
+    - python -c "from importlib.metadata import version; v = version('pdfminer.six'); assert v == '{{ version }}', v"
   requires:
     - pip
     - python {{ python_min }}
