@@ -9,7 +9,7 @@ source:
   sha256: 96bfd431e3577a55a0efd25676968ca4ce8fd5b53f14565f85716ff363889602
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -17,9 +17,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
-    - wheel
-    - setuptools-git-versioning <2
+    - setuptools-scm
   run:
     - python >={{ python_min }}
     - cryptography >=36.0.0
@@ -28,13 +26,11 @@ requirements:
 test:
   imports:
     - pdfminer
-
   commands:
     - pip check
     - pdf2txt.py -h
     - dumppdf.py -h
-    - pip check
-
+    - python -c "from importlib.metadata import version; v = version('pdfminer.six'); assert v == '{{ version }}', v"
   requires:
     - pip
     - python {{ python_min }}
